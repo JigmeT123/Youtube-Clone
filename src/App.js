@@ -10,17 +10,17 @@ import SearchPage from './components/searchPage/SearchPage';
 function App() {
   const [videos, setVideos] = useState([]);
   const [selectedVideos, setSelectedVideos] = useState(null);
-  
-  // const onVideoSelect = (video) => {
-  //   setSelectedVideos(video)
-  // }
+
+  const onPressed = (video) => {
+    setSelectedVideos(video)
+  }
   
   const handelSubmit = async (searchTerm) => {
     const response = await youtube.get('search', {
       params: {
         part: "snippet",
         maxResults: 6,
-        key: "AIzaSyCXJxblm0heO8FlyqIFd4IvJh1yTb68_ts",
+        key: "AIzaSyB_wRlgckaN5EDyGD_2cBxqWRUbN7Z4kIQ",
         q: searchTerm,
       }
     });
@@ -34,7 +34,7 @@ function App() {
                 <Header onForm={handelSubmit}/>
                 <Switch>
                     <Route path="/search/:searchTerm">
-                        <SearchPage  video={selectedVideos} videos={videos}/>
+                        <SearchPage onPressed={onPressed}  video={selectedVideos} videos={videos}/>
                     </Route>
                     <Route path="/">
                         <div className={styles.app__body}>

@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './videoitem.module.css'
-const VideoItem = ({vid, onVideoSelect}) => {
+const VideoItem = ({vid, onPressed}) => {
     if(vid){
         return (
-            <div className={styles.videoItem}>
+            <div onClick={()=>onPressed(vid)} className={styles.videoItem}>
                         <img className={styles.thumbnailImg} alt="video player" src={vid.snippet.thumbnails.high.url}/>
                         <div className={styles.vid__info}>
                             <h3>{vid.snippet.title}</h3>
