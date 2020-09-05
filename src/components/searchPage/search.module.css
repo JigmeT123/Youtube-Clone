@@ -1,0 +1,9 @@
+.searchPage{
+    height: 100vh;
+    display: flex;
+}
+.idiot{
+    flex: 0.4;
+    padding: 10px;
+    padding-top: 150px;
+}

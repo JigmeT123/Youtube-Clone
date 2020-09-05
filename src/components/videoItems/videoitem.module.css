@@ -1,0 +1,19 @@
+.videoItem{
+  display: flex;
+  height: 200px;
+  width:70%;
+  margin-left: 20px;
+  padding-top: 210px;
+  margin-bottom: 250px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.thumbnailImg{
+    width: 100%;
+    object-fit: contain;
+}
+.vid__info{
+    padding: 10px;
+}

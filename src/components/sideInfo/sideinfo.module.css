@@ -1,0 +1,26 @@
+.sideInfo{
+    display: flex;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.icon{
+    color: gray !important;
+    margin-right: 25px;
+}
+.sideInfo:hover{
+   background-color: lightgray;
+}
+
+.sideInfo:hover > p{
+    font-weight: 500;
+ }
+
+
+.icon__selected{
+    background-color: lightgray;
+}
+.icon__selected > .icon {
+    color: red !important;
+}

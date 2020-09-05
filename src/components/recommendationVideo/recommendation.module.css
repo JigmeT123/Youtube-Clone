@@ -1,0 +1,13 @@
+.recommendation{
+    flex: 0.8;
+    padding: 20px;
+    padding-top:88px;
+    padding-left: 50px;
+}
+.recommendation > h2{
+    margin-bottom: 20px;
+}
+.videos__container{
+    display: flex;
+    flex-wrap: wrap;
+}
